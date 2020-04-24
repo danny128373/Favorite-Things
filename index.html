@@ -2,14 +2,35 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="main.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
-  <script src="scripts/main.js"></script>
+  <fieldset>
+    <label for="itemName1">Favorite Thing 1</label>
+    <input type="text" id="itemName1" placeholder="Enter first favorite thing here" autofocus />
+  </fieldset>
+  <fieldset>
+    <label for="location">Location to buy</label>
+    <input type="text" id="location1" placeholder="Enter location where you can buy your favorite thing" />
+  </fieldset>
+
+  <fieldset>
+    <label for="itemName2">Favorite thing 2</label>
+    <input type="text" id="itemName2" placeholder="Enter first favorite thing here" />
+  </fieldset>
+  <fieldset>
+    <label for="location">Location to buy</label>
+    <input type="text" id="location2" placeholder="Enter location where you can buy your favorite thing" />
+  </fieldset>
+
+  <button id="saveEntry">Save your top 2 favorite things</button>
+  <article id="favoriteList"> </article>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
