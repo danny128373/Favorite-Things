@@ -9,9 +9,10 @@ document.querySelector("#saveEntry").addEventListener("click", event => {
   const itemName2 = document.querySelector("#itemName2").value
   const location2 = document.querySelector("#location2").value
 
-
-  //I can purchase {thing} at {location}
-  container.innerHTML += `
+  if (itemName1 === "" || itemName2 === "" || location1 === "" || location2 === "") {
+    window.alert("One or more input fields are empty. Please try again.")
+  } else {
+    container.innerHTML += `
         <section>
           I can purchase ${itemName1} at ${location1}.
         </section>
@@ -19,5 +20,6 @@ document.querySelector("#saveEntry").addEventListener("click", event => {
           I can purchase ${itemName2} at ${location2}.
         </section>
     `
+  }
 
 })
